@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#F4F2ED">
+<title>Cabinet d’architectes</title>
+<meta name="description" content="">
+<link rel="icon" href="data:,">
+<link rel="preload" href="fonts/SchibstedGrotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="tokens.css?v=8">
+<link rel="stylesheet" href="style.css?v=8">
+<script>document.documentElement.classList.add('js')</script>
+<script src="data.js?v=8" defer></script>
+<script src="render.js?v=8" defer></script>
+<script src="main.js?v=8" defer></script>
+</head>
+<body data-page="home">
+<a class="skip" href="#main" data-t="skipLabel"></a>
+<header class="site-header" data-slot="header"></header>
+<main id="main" tabindex="-1">
+  <section class="hero" aria-labelledby="h-home">
+    <figure class="hero-media" data-slot="hero"></figure>
+    <div class="grid hero-content">
+      <p class="label" data-t="home.eyebrow"></p>
+      <h1 id="h-home" data-t="home.title"></h1>
+      <p class="hero-sub" data-t="home.hero.statement"></p>
+      <div class="hero-cta" data-slot="hero-cta"></div>
+    </div>
+  </section>
+
+  <section class="section services" aria-labelledby="h-services">
+    <div class="grid">
+      <div class="sec-head rule"><h2 class="label" id="h-services" data-t="home.services.label"></h2><span class="label" data-t="home.services.count"></span></div>
+      <p class="statement" data-t="home.services.title"></p>
+      <p class="services-intro" data-t="home.services.intro"></p>
+      <ul class="metiers" data-slot="services"></ul>
+    </div>
+  </section>
+
+  <section class="section stats band-strong" aria-labelledby="h-stats">
+    <div class="grid">
+      <div class="sec-head rule"><h2 class="label" id="h-stats" data-t="home.stats.label"></h2><span class="label" data-t="home.stats.count"></span></div>
+      <ul class="stat-list" data-slot="stats"></ul>
+    </div>
+  </section>
+
+  <section class="hscroll band-soft" aria-labelledby="h-featured" data-hscroll>
+    <div class="hs-pin">
+      <div class="grid">
+        <div class="sec-head rule"><h2 class="label" id="h-featured" data-t="home.featured.label"></h2><span class="label" data-slot="featured-count"></span></div>
+      </div>
+      <div class="hs-track" data-slot="featured"></div>
+      <div class="hs-bar" aria-hidden="true"><i></i></div>
+    </div>
+  </section>
+
+  <section class="section steps" aria-labelledby="h-steps">
+    <div class="grid">
+      <div class="sec-head rule"><h2 class="label" id="h-steps" data-t="home.steps.label"></h2><span class="label" data-t="home.steps.count"></span></div>
+      <p class="statement" data-t="home.steps.title"></p>
+      <ol class="step-list" data-slot="steps"></ol>
+    </div>
+  </section>
+
+  <section class="section manifest band-soft" aria-labelledby="h-manifest">
+    <div class="grid">
+      <div class="sec-head rule"><h2 class="label" id="h-manifest" data-t="home.manifest.label"></h2><span class="label" data-t="site.name"></span></div>
+      <p class="statement" data-rich="home.manifest.text"></p>
+    </div>
+  </section>
+
+  <section class="section contact-band band-strong" aria-labelledby="h-contact">
+    <div class="grid">
+      <div class="sec-head rule"><h2 class="label" id="h-contact" data-t="home.contact.label"></h2><span class="label" data-t="site.city"></span></div>
+      <p class="big" data-rich="home.contact.title"></p>
+      <p class="contact-text" data-t="home.contact.text"></p>
+      <div class="contact-actions" data-slot="contact-actions"></div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer" data-slot="footer"></footer>
+<noscript><p class="noscript-msg">Ce site utilise JavaScript pour afficher son contenu.</p></noscript>
+</body>
+</html>

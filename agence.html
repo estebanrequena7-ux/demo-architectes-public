@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#F4F2ED">
+<title>Cabinet d’architectes</title>
+<meta name="description" content="">
+<link rel="icon" href="data:,">
+<link rel="preload" href="fonts/SchibstedGrotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="tokens.css?v=8">
+<link rel="stylesheet" href="style.css?v=8">
+<script>document.documentElement.classList.add('js')</script>
+<script src="data.js?v=8" defer></script>
+<script src="render.js?v=8" defer></script>
+<script src="main.js?v=8" defer></script>
+</head>
+<body data-page="agency">
+<a class="skip" href="#main" data-t="skipLabel"></a>
+<header class="site-header" data-slot="header"></header>
+<main id="main" tabindex="-1">
+  <section class="page-head band-strong" aria-labelledby="h-agency">
+    <div class="grid">
+      <p class="label" data-t="agency.eyebrow"></p>
+      <h1 id="h-agency" class="page-title wide" data-t="agency.title"></h1>
+    </div>
+    <figure class="bleed" data-slot="agency-image"></figure>
+  </section>
+
+  <section class="section agency-intro" aria-labelledby="h-intro">
+    <div class="grid">
+      <div class="sec-head rule"><h2 class="label" id="h-intro" data-t="agency.eyebrow"></h2><span class="label" data-t="site.name"></span></div>
+      <div class="cols" data-slot="agency-intro"></div>
+    </div>
+  </section>
+
+  <section class="section band-soft" aria-labelledby="h-team">
+    <div class="grid">
+      <div class="sec-head rule"><h2 class="label" id="h-team" data-t="agency.teamLabel"></h2><span class="label" data-slot="team-count"></span></div>
+      <ul class="team" data-slot="team"></ul>
+      <p class="label team-note" data-t="agency.teamNote"></p>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact" aria-labelledby="h-contact">
+    <div class="grid">
+      <div class="sec-head rule"><h2 class="label" id="h-contact" data-t="agency.contactLabel"></h2><span class="label" data-t="site.city"></span></div>
+      <h3 class="big" data-t="agency.contactTitle"></h3>
+      <div class="contact-info" data-slot="contact-info"></div>
+      <figure class="map" data-slot="map"></figure>
+      <div class="form-wrap">
+        <div class="form-intro"><h3 data-t="agency.form.title"></h3><p class="label" data-t="agency.form.note"></p></div>
+        <form class="form" data-slot="form" novalidate></form>
+        <div class="sent" data-slot="sent" tabindex="-1" hidden></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer" data-slot="footer"></footer>
+<noscript><p class="noscript-msg">Ce site utilise JavaScript pour afficher son contenu.</p></noscript>
+</body>
+</html>

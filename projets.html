@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#F4F2ED">
+<title>Cabinet d’architectes</title>
+<meta name="description" content="">
+<link rel="icon" href="data:,">
+<link rel="preload" href="fonts/SchibstedGrotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="tokens.css?v=8">
+<link rel="stylesheet" href="style.css?v=8">
+<script>document.documentElement.classList.add('js')</script>
+<script src="data.js?v=8" defer></script>
+<script src="render.js?v=8" defer></script>
+<script src="main.js?v=8" defer></script>
+</head>
+<body data-page="projects">
+<a class="skip" href="#main" data-t="skipLabel"></a>
+<header class="site-header" data-slot="header"></header>
+<main id="main" tabindex="-1">
+  <div data-view="list">
+    <section class="page-head band-strong" aria-labelledby="h-projects">
+      <div class="grid">
+        <p class="label" data-t="projectsPage.eyebrow"></p>
+        <h1 id="h-projects" class="page-title" data-t="projectsPage.title"></h1>
+        <p class="lede" data-t="projectsPage.intro"></p>
+      </div>
+    </section>
+    <section class="section tight band-soft projects-list" aria-label="Liste des projets">
+      <div class="grid">
+        <div class="filters" role="group" data-slot="filters"></div>
+        <p class="label count" role="status" aria-live="polite" data-slot="count"></p>
+      </div>
+      <div class="grid projects-grid" data-slot="grid"></div>
+    </section>
+  </div>
+  <article class="detail" data-view="detail" hidden></article>
+</main>
+<footer class="site-footer" data-slot="footer"></footer>
+<noscript><p class="noscript-msg">Ce site utilise JavaScript pour afficher son contenu.</p></noscript>
+</body>
+</html>
